@@ -201,7 +201,7 @@ var walker_modifications = Array(
 			return selected_object.size / 2;
 		},
 		get_cost: function(selected_object) {
-			return selected_object.size / 2;
+			return 100000 * selected_object.size;
 		},
 	},
 	{
@@ -224,7 +224,7 @@ var walker_modifications = Array(
 			return 1;
 		},
 		get_cost: function(selected_object) {
-			return 50000;
+			return 500000;
 		},
 		get_mod_effect: function(selected_object) {
 			selected_object.has_missile_launcher = 1;
@@ -238,7 +238,7 @@ var walker_modifications = Array(
 			return 1;
 		},
 		get_cost: function(selected_object) {
-			return 4000 * selected_object.size;
+			return 5000 * selected_object.size;
 		},
 		get_mod_effect: function(selected_object) {
 			selected_object.pace = selected_object.pace + 4;
